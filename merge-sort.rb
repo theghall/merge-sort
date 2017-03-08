@@ -11,7 +11,7 @@ def merge_sort(ary, merge_ary = [])
     mid = ary.length / 2 - 1
 
     left = ary[0..mid]
-    right = ary[mid + 1..1]
+    right = ary[mid + 1..-1]
 
     merge_sort(left, merge_ary)
 
